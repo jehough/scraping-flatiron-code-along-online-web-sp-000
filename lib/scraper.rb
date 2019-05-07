@@ -8,7 +8,6 @@ class Scraper
   def get_page
     html = Nokogiri::HTML(open('http://learn-co-curriculum.github.io/site-for-scraping/courses'))
   end
-  binding.pry
     def print_courses
     self.make_courses
     Course.all.each do |course|
